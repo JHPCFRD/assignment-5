@@ -7,6 +7,7 @@
     This is the index.html file for assignment-5.
 -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Rock Papers Scissors Shoot!</h1>
@@ -21,21 +23,60 @@
 
     <main>
         <section id="player-section" class="game-section">
-            <h2>Player</h2>
+            <h2>Your Throw</h2>
             <div class="choices-section">
-                
+                <div class="choice" id="rock">
+                    <img src="images/rock.png" alt="Rock">
+                    <div class="choice-label">Rock</div>
+                </div>
+                <div class="choice" id="paper">
+                    <img src="images/paper.png" alt="Paper">
+                    <div class="choice-label">Paper</div>
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="images/scissors.png" alt="Scissors">
+                    <div class="choice-label">Scissors</div>
+                </div>
             </div>
         </section>
 
-
         <section id="computer-section" class="game-section">
-
+            <h2>Computer Throw</h2>
+            <div class="computer-display">
+                <div id="computer-choice">
+                    <img src="images/question-mark.PNG" alt="Thinking..." id="computer-image">
+                    <div id="computer-caption">Waiting for your move.</div>
+                </div>
+            </div>
         </section>
 
-
         <section id="results-section" class="game-section">
+            <h2>Results</h2>
+            <div id="results-display">
+                <p id="results-text">Choose your hand to start  </p>
+                <button id="play-again" class="hidden">Play Again</button>
+            </div>
+        </section>
 
+        <section id="score-section" class="game-section">
+            <h2>Scoreboard</h2>
+            <div class="score-display">
+                <div class="score-item">
+                    <span class="score-label">Wins:</span>
+                    <span id="wins-count">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Losses:</span>
+                    <span id="losses-count">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Ties:</span>
+                    <span id="ties-count">0</span>
+                </div>
+            </div>
+            <button id="reset-score">Reset Score</button>
         </section>
     </main>
 </body>
+
 </html>
