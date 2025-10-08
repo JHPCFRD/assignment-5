@@ -84,7 +84,7 @@ const game = {
         const animationInterval = 500;
         this.animationInterval = setInterval(() => {
             const randomChoice = this.choices[Math.floor(Math.random() * this.choices.length)];
-            computerImage.src = `images/${randomChoice}.png`;
+            computerImage.src = `images/${randomChoice}.PNG`;
             computerCaption.textContent = 'Thinking...';
             animationCount++;
 
@@ -100,7 +100,7 @@ const game = {
         const computerCaption = document.getElementById('computer-caption');
         computerImage.classList.remove('thinking');
         this.computerChoice = this.choices[Math.floor(Math.random() * this.choices.length)];
-        computerImage.src = `images/${this.computerChoice}.png`;
+        computerImage.src = `images/${this.computerChoice}.PNG`;
         computerCaption.textContent = this.capitalizeFirstLetter(this.computerChoice);
         this.determineWinner();
         this.animating = false;
